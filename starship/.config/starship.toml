@@ -1,0 +1,90 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$cmd_duration $jobs\
+$line_break\
+$character"""
+
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[directory]
+style = "blue"
+
+[username]
+disabled = true
+show_always = true
+style_user = 'purple bold'
+style_root = 'red bold'
+format = '[$user]($style) '
+#aliases = { "corpuser034g" = "matchai" }
+
+[character]
+success_symbol = "[🕊️ †](bold bright-cyan)"
+error_symbol = "[☠️ ✗](bold red)"
+vimcmd_symbol = "[❮](green)"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+#symbol = '🌱 '
+style = "cyan"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
+[git_status]
+style = "purple"
+
+[git_metrics]
+disabled = false
+
+[fill]
+symbol = " "
+
+[jobs]
+symbol = "✦"
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[memory_usage]
+disabled = false
+# symbol = " "
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
+
+[nodejs]
+format = 'via [$symbol $version](bold green) '
+
+[docker_context]
+format = 'via [🐋 $context](blue bold)'
+
+[lua]
+format = 'via [🌕 $version](bold blue) '
+
+[python]
+symbol = '🐍 '
+style = "yellow bold"
+pyenv_version_name = true
