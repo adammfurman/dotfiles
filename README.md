@@ -51,11 +51,18 @@ mkdir NAME_OF_PACKAGE
 Next, create the directory structure such that it mirrors the structure from the $HOME directory to the file/folder you want to stow
 
 Given a package located in the $HOME/.config directory:
+
 ```
 mkdir NAME_OF_PACKAGE/.config
 ```
 
-Now, use `stow` to create a symlink for the package/file
+Then, move the package folder or file into the .dotfiles directory you just created
+
+```
+mv ~/.config/NAME_OF_PACKAGE ~/.dotfiles/NAME_OF_PACKAGE/.config
+```
+
+Now, use stow to create a symlink for the package/file
 
 ```
 stow NAME_OF_PACKAGE
