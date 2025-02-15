@@ -1,7 +1,7 @@
 # ~~~~~~~~~~~~~~~~~~~~ Oh-My-Zsh ~~~~~~~~~~~~~~~~~~~~~~~
 
 # path to zsh installation
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.config/zsh/.oh-my-zsh"
 
 # add plugins
 plugins=(
@@ -10,10 +10,14 @@ plugins=(
 )
 
 
-# ~~~~~~~~~~~~~~~~~~~~ Something ~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~ zsh Settings ~~~~~~~~~~~~~~~~~~~~
 
-# i dont remember what this is, look up with ollama
+# i dont remember what this is
 export PATH=${PATH}:/usr/local/sbin
+
+# move history to cache directory
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+
 
 # ~~~~~~~~~~~~~~~~~~ Text Editors ~~~~~~~~~~~~~~~~~~~
 
