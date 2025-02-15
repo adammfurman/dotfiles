@@ -1,23 +1,7 @@
-# ~~~~~~~~~~~~~~~~~~~~ Oh-My-Zsh ~~~~~~~~~~~~~~~~~~~~~~~
-
-# path to zsh installation
-export ZSH="$HOME/.config/zsh/.oh-my-zsh"
-
-# add plugins
-plugins=(
-	zsh-syntax-highlighting
-	zsh-completions
-)
-
-
 # ~~~~~~~~~~~~~~~~~~~~ zsh Settings ~~~~~~~~~~~~~~~~~~~~
 
 # i dont remember what this is
 export PATH=${PATH}:/usr/local/sbin
-
-# move history to cache directory
-HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
-
 
 # ~~~~~~~~~~~~~~~~~~ Text Editors ~~~~~~~~~~~~~~~~~~~
 
@@ -49,6 +33,14 @@ export PATH=$PATH:/Users/Adam/.spicetify
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+# enable zsh-completions
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+fi
 
 # ~~~~~~~~~~~~~~~~~~~ Sources ~~~~~~~~~~~~~~~~~~~~~~
 
