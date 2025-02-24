@@ -1,6 +1,6 @@
 # My Dotfiles
 
-This directory contains the dotfiles for my macOS config, managed by [GNU Stow](https://www.gnu.org/software/stow/).
+This directory contains the dotfiles for my macOS config, managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 ## Dependencies
 
