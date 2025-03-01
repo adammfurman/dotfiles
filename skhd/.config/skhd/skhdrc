@@ -48,10 +48,14 @@ shift + alt - k : yabai -m window --swap north
 shift + alt - l : yabai -m window --swap east
 
 # move window to display and focus display
-shift + alt - s : yabai -m window --display west; yabai -m display --focus west
-shift + alt - g : yabai -m window --display east; yabai -m display --focus east
+shift + alt - s : yabai -m window --display west
+shift + alt - g : yabai -m window --display east
 
 # move window to space
+ctrl + alt - "left" : yabai -m window --space prev --focus
+ctrl + alt - "right" : yabai -m window --space next --focus
+
+
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2
 shift + alt - 3 : yabai -m window --space 3
