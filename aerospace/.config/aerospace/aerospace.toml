@@ -123,10 +123,10 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-equal = 'resize smart +100'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    ctrl-1 = 'workspace 1 '
-    ctrl-2 = 'workspace 2 '
-    ctrl-3 = 'workspace 3 '
-    ctrl-4 = 'workspace 4 '
+    ctrl-1 = 'workspace 1'
+    ctrl-2 = 'workspace 2'
+    ctrl-3 = 'workspace 3'
+    ctrl-4 = 'workspace 4'
     ctrl-5 = 'workspace 5 '
     ctrl-6 = 'workspace 6 '
     ctrl-7 = 'workspace 7 '
