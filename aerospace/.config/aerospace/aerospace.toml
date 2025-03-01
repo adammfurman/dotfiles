@@ -166,10 +166,10 @@ automatically-unhide-macos-hidden-apps = false
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
     #s = ['layout sticky tiling', 'mode main']
 
-[workspace-to-monitor-force-assignment]
-    1 = 'built-in Retina Display'
-    2 = 'LG HDR WQHD'
-    3 = 'LG HDR 4k'
+#[workspace-to-monitor-force-assignment]
+#   1 = 'built-in Retina Display'
+#   2 = 'LG HDR WQHD'
+#   3 = 'LG HDR 4k'
 
 # Always float windows of these applications:
 # See: https://nikitabobko.github.io/AeroSpace/guide#callbacks

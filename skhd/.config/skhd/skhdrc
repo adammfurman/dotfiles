@@ -1,0 +1,44 @@
+# Modifying layout
+
+# rotate layout clockwise
+shift + ctrl - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + ctrl - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + ctrl - x : yabai -m space --mirror x-axis
+
+# toggle window float
+ctrl - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# Modifying Window Size
+
+# maximize a window
+ctrl - m : yabai -m window --toggle zoom-fullscreen
+
+# balance windows
+ctrl - b : yabai -m space --balance
+
+# Changing focus
+
+# change window focus within space
+ctrl - h : yabai -m window --focus west
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - l : yabai -m window --focus east
+
+# change display focus
+ctrl + ctrl + h : yabai -m display --focus prev
+ctrl + ctrl + l : yabai -m display --focus next
+
+# change space focus
+#
+
+# Move window
+
+# move window within a space
+shift + ctrl -  h : yabai -m window --swap west
+shift + ctrl - j : yabai -m window --swap south
+shift + ctrl - k : yabai -m window --swap north
+shift + ctrl - l : yabai -m window --swap east
