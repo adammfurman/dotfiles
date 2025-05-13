@@ -1,0 +1,97 @@
+# LAYOUT COMMANDS
+
+# to occupy the same space
+ctrl - b : yabai -m space --balance
+# Flip the tree horizontally
+# ctrl -  : yabai -m space --mirror x-axis
+# Flip the tree vertically
+# ctrl - y : yabai -m space --mirror y-axis
+# Rotate the window tree clock-wise (options: 90, 180, 270 degree)
+ctrl - r : yabai -m space --rotate 180
+# toggle window split vertically or horizontally with its parent node
+ctrl - x : yabai -m window --toggle split
+# toggle whether the focused window should be tiled (only on bsp spaces)
+ctrl - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# options: zoom-parent, zoom-fullscreen, native-fullscreen
+ctrl - return : yabai -m window --toggle zoom-fullscreen
+
+# PADDING AND GAPS
+
+# toggle padding on the current space
+ctrl - p : yabai -m space --toggle padding
+# toggle gap between windows on the current space
+ctrl - g : yabai -m space --toggle gap
+# set all padding to 12 (abs = absolute)
+ctrl + shift - p : yabai -m space --padding abs:12:12:12:12
+# set gap between windows to 0 (abs = absolute)
+ctrl + shift - g : yabai -m space --gap abs:12
+# add 5 to all padding (rel = relative)
+ctrl - m : yabai -m space --padding rel:5:5:5:5
+# remove 5 from all padding (rel = relative)
+ctrl - n : yabai -m space --padding rel:-5:-5:-5:-5
+# add 5 to gaps (rel = relative)
+ctrl + shift - m : yabai -m space --gap rel:10
+# remove 5 from gap (rel = relative)
+ctrl + shift - n : yabai -m space --gap rel:-10
+
+# FOCUS COMMANDS
+
+# change window focus within space
+# ctrl - j : yabai -m window --focus south
+# ctrl - k : yabai -m window --focus north
+# ctrl - h : yabai -m window --focus west
+# ctrl - l : yabai -m window --focus east
+
+# focus previous or next window in window tree (options: prev, next)
+ctrl - j : yabai -m window --focus prev
+ctrl - k : yabai -m window --focus next
+
+# change window focus across displays
+# Focus previous/next display by arrangement index
+ctrl - h : yabai -m display --focus prev
+ctrl - l : yabai -m display --focus next
+
+# MOVE COMMANDS
+
+# move window within space
+# swap with previous or next window in window tree (options: prev, next)
+ctrl + shift - j : yabai -m window --swap prev
+ctrl + shift - k : yabai -m window --swap next
+
+# warp at previous or next window in window tree (options: prev, next)
+ctrl - i : yabai -m window --warp prev
+ctrl - o : yabai -m window --warp next
+
+# move window to display
+# move window to previous space
+ctrl + shift - h : yabai -m window --display prev --focus
+ctrl + shift - l : yabai -m window --display next --focus
+
+# move window to space
+ctrl + shift - 1 : yabai -m window --space 1 --focus
+ctrl + shift - 2 : yabai -m window --space 2 --focus
+ctrl + shift - 3 : yabai -m window --space 3 --focis
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+# ctrl + shift - 1 : yabai -m window --space 1
+
+# RESIZE WINDOWS
+ctrl + alt - h : yabai -m window --resize left:-50:0; \
+                  yabai -m window --resize right:-50:0
+ctrl + alt - j : yabai -m window --resize bottom:0:50; \
+                  yabai -m window --resize top:0:50
+ctrl + alt - k : yabai -m window --resize top:0:-50; \
+                  yabai -m window --resize bottom:0:-50
+ctrl + alt - l : yabai -m window --resize right:50:0; \
+                  yabai -m window --resize left:50:0
+
+
+# STOP/START/RESTART YABAI
+
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service
+ctrl + alt - r : yabai --restart-service
