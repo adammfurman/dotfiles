@@ -14,7 +14,7 @@ export VISUAL="$EDITOR"
 # quickly edit and source .zshrc
 alias nz="nvim ~/.config/zsh/.zshrc"
 alias sz=" source ~/.config/zsh/.zshrc; echo '~/.config/zsh/.zshrc sourced'"
-alias tree="tree -L 2" #limit tree output to 3 levels by default
+alias tre="tree -L 2" #limit tree output to 3 levels by default
 alias ff="fastfetch"
 
 # edit hosts with nano
