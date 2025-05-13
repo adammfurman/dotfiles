@@ -28,3 +28,4 @@ window-inherit-working-directory=false
 # Keybinds
 
 keybind = super+d=new_split:auto 
+# move between splits is cmd + alt + up/down/left/right
