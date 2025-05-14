@@ -3,7 +3,7 @@
 # balance all windows in a space
 ctrl - b : yabai -m space --balance
 # Flip the tree horizontally
-# ctrl -  : yabai -m space --mirror x-axis
+# yabai -m space --mirror x-axis
 # Flip the tree vertically
 # ctrl - y : yabai -m space --mirror y-axis
 # Rotate the window tree clock-wise (options: 90, 180, 270 degree)
@@ -18,21 +18,15 @@ ctrl - return : yabai -m window --toggle zoom-fullscreen
 # PADDING AND GAPS
 
 # toggle padding on the current space
-ctrl - p : yabai -m space --toggle padding
+# ctrl - p : yabai -m space --toggle padding
 # toggle gap between windows on the current space
-ctrl - g : yabai -m space --toggle gap
-# set all padding to 12 (abs = absolute)
-ctrl + shift - p : yabai -m space --padding abs:12:12:12:12
-# set gap between windows to 0 (abs = absolute)
-ctrl + shift - g : yabai -m space --gap abs:12
-# add 5 to all padding (rel = relative)
-ctrl - m : yabai -m space --padding rel:5:5:5:5
-# remove 5 from all padding (rel = relative)
-ctrl - n : yabai -m space --padding rel:-5:-5:-5:-5
-# add 5 to gaps (rel = relative)
-ctrl + shift - m : yabai -m space --gap rel:10
-# remove 5 from gap (rel = relative)
-ctrl + shift - n : yabai -m space --gap rel:-10
+ctrl - g : yabai -m space --toggle gap / yabai -m space --toggle padding
+# set all padding to 12 (abs = absolute) & set gap between windows to 0 (abs = absolute)
+ctrl + shift - g : yabai -m space --padding abs:12:12:12:12 / yabai -m space --gap abs:12
+# add 5 to all padding (rel = relative) & add 5 to gaps (rel = relative)
+ctrl - m : yabai -m space --padding rel:5:5:5:5; yabai -m space --gap rel:5
+# remove 5 from all padding (rel = relative) & remove 5 from gap (rel = relative)
+ctrl - n : yabai -m space --padding rel:-5:-5:-5:-5; yabai -m space --gap rel:-5
 
 # FOCUS COMMANDS
 
