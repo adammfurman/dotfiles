@@ -1,6 +1,6 @@
 # LAYOUT COMMANDS
 
-# to occupy the same space
+# balance all windows in a space
 ctrl - b : yabai -m space --balance
 # Flip the tree horizontally
 # ctrl -  : yabai -m space --mirror x-axis
