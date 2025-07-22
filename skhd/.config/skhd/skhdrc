@@ -3,7 +3,7 @@
 # balance all windows in a space
 ctrl - b : yabai -m space --balance
 # Flip the tree horizontally
-# yabai -m space --mirror x-axis
+# ctrl - v : yabai -m space --mirror x-axis
 # Flip the tree vertically
 # ctrl - y : yabai -m space --mirror y-axis
 # Rotate the window tree clock-wise (options: 90, 180, 270 degree)
