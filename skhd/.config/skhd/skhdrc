@@ -1,8 +1,13 @@
 # LAYOUT COMMANDS
 
+# select layout
+ctrl + alt - b : yabai -m config layout bsp
+ctrl + alt - s : yabai -m config layout stack
 # balance all windows in a space
 ctrl - b : yabai -m space --balance
-# Flip the tree horizontally
+# equalize split ratios to reset to default absolute
+ctrl - e : yabai -m space --equalize
+# Flip tree horizontally
 # ctrl - v : yabai -m space --mirror x-axis
 # Flip the tree vertically
 # ctrl - y : yabai -m space --mirror y-axis
@@ -37,8 +42,8 @@ ctrl - n : yabai -m space --padding rel:-5:-5:-5:-5; yabai -m space --gap rel:-5
 # ctrl - l : yabai -m window --focus east
 
 # focus previous or next window in window tree (options: prev, next)
-ctrl - j : yabai -m window --focus prev
-ctrl - k : yabai -m window --focus next
+ctrl - j : yabai -m window --focus prev || yabai -m window --focus stack.prev || yabai -m window --focus stack.last 
+ctrl - k : yabai -m window --focus next || yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 # change window focus across displays
 # Focus previous/next display by arrangement index
