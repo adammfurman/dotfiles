@@ -20,10 +20,17 @@ alias ff="fastfetch"
 # edit hosts with nano
 alias nh="sudo nano /etc/hosts"
 
+# get system hardware information
+alias hh="system_profiler SPHardwareDataType"
+
+# ~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~
+
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # ~~~~~~~~~~~~~~~~~~~~ Prompts ~~~~~~~~~~~~~~~~~~~~
 
 eval "$(starship init zsh)"
-
 
 # ~~~~~~~~~~~~~~~~~~~~ Other ~~~~~~~~~~~~~~~~~~~~
 
