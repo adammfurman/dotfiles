@@ -16,7 +16,7 @@ ctrl - r : yabai -m space --rotate 180
 # toggle window split vertically or horizontally with its parent node
 ctrl - x : yabai -m window --toggle split
 # toggle whether the focused window should be tiled (only on bsp spaces)
-ctrl - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+ctrl - f : yabai -m window --toggle float --grid 20:10:2:1:6:18
 # options: zoom-parent, zoom-fullscreen, native-fullscreen
 ctrl - return : yabai -m window --toggle zoom-fullscreen
 
