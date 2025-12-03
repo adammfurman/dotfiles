@@ -34,8 +34,6 @@ eval "$(starship init zsh)"
 
 # ~~~~~~~~~~~~~~~~~~~~ Other ~~~~~~~~~~~~~~~~~~~~
 
-export PATH=$PATH:/Users/Adam/.spicetify
-
 # turn off zsh underlining
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
@@ -54,5 +52,8 @@ fi
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/adam/.lmstudio/bin"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/adam/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
