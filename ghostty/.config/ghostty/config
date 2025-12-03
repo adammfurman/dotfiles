@@ -16,6 +16,7 @@ font-size = 14
 cursor-color = #8a6df6
 cursor-style = underline
 cursor-style-blink = true
+adjust-cursor-thickness = 125%
 adjust-underline-thickness = 50%
 shell-integration-features = no-cursor
 
