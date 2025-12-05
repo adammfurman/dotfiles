@@ -27,6 +27,9 @@ alias nh="sudo nano /etc/hosts"
 # get system hardware information
 alias hh="system_profiler SPHardwareDataType"
 
+# get bundle identifier of an app
+alias bundle-id="mdls -name kMDItemCFBundleIdentifier -r"
+
 # ~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~
 
 GPG_TTY=$(tty)
