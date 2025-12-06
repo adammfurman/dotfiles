@@ -30,6 +30,15 @@ alias hh="system_profiler SPHardwareDataType"
 # get bundle identifier of an app
 alias bundle-id="mdls -name kMDItemCFBundleIdentifier -r"
 
+# get MAC address of Wi-Fi interface
+alias mac-w="ifconfig en0 | grep ether | cut -d ' ' -f 2"
+
+# get MAC address of ethernet interface
+alias mac-e="ifconfig en7 | grep ether | head -n 1 | cut -d ' ' -f 2"
+
+# list hardware address of all interface
+alias mac-h="networksetup -listallhardwareports"
+
 # ~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~
 
 GPG_TTY=$(tty)
