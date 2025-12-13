@@ -39,6 +39,11 @@ alias mac-e="ifconfig en7 | grep ether | head -n 1 | cut -d ' ' -f 2"
 # list hardware address of all interface
 alias mac-h="networksetup -listallhardwareports"
 
+# veracrypt-rsync-backup script Aliases
+alias backup="~/.local/bin/veracrypt-rsync-backup/backup.sh"
+alias check="$HOME/.local/bin/veracrypt-rsync-backup/check.sh"
+alias restore="$HOME/.local/bin/veracrypt-rsync-backup/restore.sh"
+
 # ~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~
 
 GPG_TTY=$(tty)
