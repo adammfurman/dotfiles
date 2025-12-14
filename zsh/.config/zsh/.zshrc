@@ -1,7 +1,9 @@
 # ~~~~~~~~~~~~~~~~~~~~ zsh Settings ~~~~~~~~~~~~~~~~~~~~
 
-# i dont remember what this is
+# Append this path to the default PATH for spoof.sh
 export PATH=${PATH}:/usr/local/sbin
+# Append to default PATH so user scripts are globally executable
+export PATH=${PATH}:"$HOME/.local/bin"
 
 # ~~~~~~~~~~~~~~~~~~ Text Editors ~~~~~~~~~~~~~~~~~~~
 
@@ -38,11 +40,6 @@ alias mac-e="ifconfig en7 | grep ether | head -n 1 | cut -d ' ' -f 2"
 
 # list hardware address of all interface
 alias mac-h="networksetup -listallhardwareports"
-
-# veracrypt-rsync-backup script Aliases
-alias backup="~/.local/bin/veracrypt-rsync-backup/backup.sh"
-alias check="$HOME/.local/bin/veracrypt-rsync-backup/check.sh"
-alias restore="$HOME/.local/bin/veracrypt-rsync-backup/restore.sh"
 
 # ~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~
 
