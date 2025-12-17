@@ -1,4 +1,10 @@
+# ~~~~~~~~~~~~~~ .zshenv ~~~~~~~~~~~~~~~~~~~~
+#
+# .zshenv is sourced for all shells (interactive,
+# non-interactive, and login).
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 # Define standard home directories
+export ZDOTDIR="$HOME/.config/zsh" # sets .zshrc file to specified location
 export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
