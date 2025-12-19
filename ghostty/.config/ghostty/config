@@ -26,6 +26,9 @@ macos-icon-frame = plastic
 macos-auto-secure-input = false
 window-inherit-working-directory=false
 
+# make ghostty recognizable in ssh
+term = xterm-256color
+
 # Keybinds
 
 keybind = super+d=new_split:auto 
