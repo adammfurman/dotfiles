@@ -17,13 +17,13 @@ cursor-color = #8a6df6
 cursor-style = underline
 cursor-style-blink = true
 adjust-cursor-thickness = 125%
-adjust-underline-thickness = 50%
+adjust-underline-thickness = 75%
 shell-integration-features = no-cursor
 
 macos-icon = custom-style
 macos-icon-frame = plastic
 
-macos-auto-secure-input = false
+macos-auto-secure-input = true
 window-inherit-working-directory=false
 
 # make ghostty recognizable in ssh
