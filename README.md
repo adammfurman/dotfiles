@@ -26,57 +26,64 @@ $ brew install stow
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+First, clone the dotfiles repo in your `$HOME` directory using git
 
 ```
 $ git clone git@github.com/adammfurman/dotfiles.git
-$ cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
+$ cd dotfiles
 $ stow .
 ```
 
-## Usage
+Configuration files are now symlinked to their appropriate directories.
 
-To add new packages/files to the repo, first create a directory named after the package in the .dotfiles directory
+## Adding Packages
 
-```
-$ cd ~/.dotfiles
-$ mkdir NAME_OF_PACKAGE
-```
+To add new directories/files to the repo, move the directory/file into the `.dotfiles` directory such that it mimics the exact file path from `$HOME` directory. 
 
-Next, create the directory structure within that directory such that it mirrors the structure from the $HOME directory to the package/file you want to stow (but not including that package/file)
+E.g., given a directory in `~/.config/DIRECTORY_TO_STOW`, create `.dotfiles/.config`.
 
-Given a package folder located in the $HOME/.config directory:
+Next move the `DIRECTORY_TO_STOW` into the `.dotfiles` location:
 
 ```
-$ mkdir NAME_OF_PACKAGE/.config
+$ mv ~/.config/DIRECTORY_TO_STOW ~/.dotfiles/config/
 ```
 
-Then, move the package folder or file into the .dotfiles directory you just created
+Now, use `stow` to create a symlink for the directory/file.
 
 ```
-$ mv ~/.config/NAME_OF_PACKAGE ~/.dotfiles/NAME_OF_PACKAGE/.config
+$ stow ~/.dotfiles/.config/DIRECTORY_TO_STOW
 ```
 
-Now, use stow to create a symlink for the package/file
+Then, add and commit the changes to git.
 
 ```
-$ stow NAME_OF_PACKAGE
+$ git add ~/.dotfiles/.config/DIRECTORY_TO_STOW
+$ git commit -m "added DIRECTORY_TO_STOW"
 ```
 
-Then, add and commit the changes to git
-
-```
-$ git add NAME_OF_PACKAGE
-$ git commit -m "added NAME_OF_PACKAGE"
-```
-
-Finally, if all is working, push to git
+Start a new terminal session to check that config files are worked. Then push to github.
 
 ```
 $ git push origin main
+```
+
+## Other Usage
+
+To delete all symlinks:
+
+```
+$ cd ~/.dotfiles
+$ stow -D .
+```
+
+To restore all symlinks (delete and stow anew):
+
+```
+$ cd ~/.dotfiles
+$ stow -R .
 ```
