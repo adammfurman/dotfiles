@@ -9,6 +9,8 @@
 # ~~~~~~~~~~~~~~~~~~~~~ PATH ~~~~~~~~~~~~~~~~~~~~~~~~
 # PATH sets directories for executable files
 
+# Add homebrew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # sbin is for commands that use sudo privileges
 export PATH=${PATH}:/usr/local/sbin #set for spoof.sh
 # set for user scripts
@@ -28,6 +30,8 @@ export VISUAL="$EDITOR"
 GPG_TTY=$(tty)
 export GPG_TTY
 
+# set Sequoia home directory
+export SEQUOIA_HOME="$HOME/.sequoia-pgp"
 
 # ~~~~~~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -71,7 +75,7 @@ fi
 
 # ~~~~~~~~~~~~~~~~~~~ Sources ~~~~~~~~~~~~~~~~~~~~~~
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
@@ -82,3 +86,5 @@ fpath=(/Users/adam/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"

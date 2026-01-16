@@ -4,3 +4,4 @@
 # environment for login shells. Sourced before .zshrc
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eval "$(/opt/homebrew/bin/brew shellenv)"
