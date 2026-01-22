@@ -33,6 +33,11 @@ export GPG_TTY
 # set Sequoia home directory
 export SEQUOIA_HOME="$HOME/.sequoia-pgp"
 
+# set vimrc home
+export VIMINIT='source ~/.config/vim/vimrc'
+export MYVIMRC='~/.config/vim/vimrc'
+
+
 # ~~~~~~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~
 
 # quickly edit and source .zshrc

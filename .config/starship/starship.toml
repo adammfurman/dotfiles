@@ -27,17 +27,25 @@ disabled = true
 show_always = true
 style_user = 'purple bold'
 style_root = 'red bold'
-format = '[$user]($style) '
+format = '[$user]($style)@'
 #aliases = { "corpuser034g" = "matchai" }
 
+[hostname]
+disabled = true
+ssh_only = false
+ssh_symbol = '🖥️ '
+style = 'bold blue'
+format = '[$ssh_symbol$hostname]($style): '
+aliases = { "*-MacBook-Pro" = "MacBook-Pro"}
+
 [character]
-success_symbol = "[🕊️ †](bold bright-cyan)"
+success_symbol = "[ †](bold bright-cyan)"
 error_symbol = "[☠️ ✗](bold red)"
 vimcmd_symbol = "[❮](green)"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-disabled = true
+disabled = false
 
 [git_branch]
 #symbol = '🌱 '

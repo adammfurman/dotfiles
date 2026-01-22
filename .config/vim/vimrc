@@ -1,0 +1,14 @@
+" enable line numbers
+set number
+
+" highlight searches
+set hlsearch
+
+" enable terminal colors
+" set t_Co=256
+
+" enable enhanced command-line completion
+set wildmenu
+
+" enable syntax highlighting
+syntax on
