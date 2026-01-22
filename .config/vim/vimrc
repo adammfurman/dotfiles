@@ -2,7 +2,7 @@
 set number
 
 " highlight searches
-set hlsearch
+" set hlsearch
 
 " enable terminal colors
 " set t_Co=256

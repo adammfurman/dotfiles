@@ -39,7 +39,7 @@ format = '[$ssh_symbol$hostname]($style): '
 aliases = { "*-MacBook-Pro" = "MacBook-Pro"}
 
 [character]
-success_symbol = "[ †](bold bright-cyan)"
+success_symbol = "[☧](bold bright-cyan)"
 error_symbol = "[☠️ ✗](bold red)"
 vimcmd_symbol = "[❮](green)"
 
