@@ -39,8 +39,8 @@ format = '[$ssh_symbol$hostname]($style): '
 aliases = { "*-MacBook-Pro" = "MacBook-Pro"}
 
 [character]
-success_symbol = "[☧](bold bright-cyan)"
-error_symbol = "[☠️ ✗](bold red)"
+success_symbol = "[†](bold bright-cyan)"
+error_symbol = "[✗](bold red)"
 vimcmd_symbol = "[❮](green)"
 
 # Disable the package module, hiding it from the prompt completely
