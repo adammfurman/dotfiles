@@ -20,7 +20,7 @@ export PATH=${PATH}:"$HOME/.local/bin"
 # ~~~~~~~~~~~~~~~~~ zsh Settings ~~~~~~~~~~~~~~~~~~~~
 
 # Set zsh history in .cache/zsh/history (default is just .cache)
-export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 
 # set neovim as default text editor
 export EDITOR=neovim
