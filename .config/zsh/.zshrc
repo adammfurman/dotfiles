@@ -23,7 +23,7 @@ export PATH=${PATH}:"$HOME/.local/bin"
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 
 # set neovim as default text editor
-export EDITOR=neovim
+export EDITOR=vim
 export VISUAL="$EDITOR"
 
 # tell gpg-agent which terminal to use for passphrase prompts
