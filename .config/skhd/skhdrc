@@ -87,5 +87,5 @@ ctrl + alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m wi
 # STOP/START/RESTART YABAI
 
 ctrl + alt - q : yabai --stop-service
-ctrl + alt - s : yabai --start-service
+# ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
