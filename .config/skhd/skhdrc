@@ -54,12 +54,12 @@ ctrl - l : yabai -m display --focus east
 
 # move window within space
 # swap with previous or next window in window tree (options: prev, next)
-ctrl + shift - i : yabai -m window --swap prev
-ctrl + shift - o : yabai -m window --swap next
+ctrl + shift - j : yabai -m window --swap prev
+ctrl + shift - k : yabai -m window --swap next
 
 # warp at previous or next window in window tree (options: prev, next)
-ctrl + shift - j : yabai -m window --warp prev
-ctrl + shift - k : yabai -m window --warp next
+ctrl + shift - i : yabai -m window --warp prev
+ctrl + shift - o : yabai -m window --warp next
 
 # move window to display
 ctrl + shift - h : yabai -m window --display prev --focus
