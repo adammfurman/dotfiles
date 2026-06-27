@@ -41,7 +41,7 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^CleanShot X$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Help Viewer$" manage=off
-yabai -m rule --add app="^IINA$" manage=off
+# yabai -m rule --add app="^IINA$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Pearcleaner$" manage=off
 yabai -m rule --add app="^Raspberry Pi Imager$" manage=off
