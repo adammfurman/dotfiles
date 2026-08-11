@@ -52,3 +52,5 @@ yabai -m rule --add app="^VeraCrypt$" manage=off
 yabai -m rule --add app="^GPG Keychain$" manage=off
 yabai -m rule --add app="^Little Snitch Mini$" manage=off
 yabai -m rule --add app="^Bitwarden" manage=off
+yabai -m rule --add app="^Yubico Authenticator" manage=off
+
