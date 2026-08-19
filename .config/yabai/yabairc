@@ -42,8 +42,6 @@ yabai -m rule --add app="^CleanShot X$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Help Viewer$" manage=off
 # yabai -m rule --add app="^IINA$" manage=off
-yabai -m rule --add app="^Logi Options$" manage=off
-yabai -m rule --add app="^Pearcleaner$" manage=off
 yabai -m rule --add app="^Raspberry Pi Imager$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Screen Studio$" manage=off
@@ -53,4 +51,4 @@ yabai -m rule --add app="^GPG Keychain$" manage=off
 yabai -m rule --add app="^Little Snitch Mini$" manage=off
 yabai -m rule --add app="^Bitwarden" manage=off
 yabai -m rule --add app="^Yubico Authenticator" manage=off
-
+yabai -m rule --add app"^PureMac" manage=off
