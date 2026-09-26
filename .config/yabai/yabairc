@@ -50,4 +50,5 @@ yabai -m rule --add app="^Little Snitch Mini$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app="^Yubico Authenticator$" manage=off
 yabai -m rule --add app="^PureMac$" manage=off
-yabai -m rule --add app="^com.markmcguill.strongbox$" manage=off
+yabai -m rule --add app="Strongbox" manage=off
+yabai -m rule --add app="^KeePassXC$" manage=off
