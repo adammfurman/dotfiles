@@ -61,7 +61,8 @@ alias mac-w="ifconfig en0 | grep ether | cut -d ' ' -f 2"
 alias mac-e="ifconfig en7 | grep ether | head -n 1 | cut -d ' ' -f 2"
 # list hardware address of all interface
 alias mac-h="networksetup -listallhardwareports"
-
+# Create a temporary disk from RAM of 512 MB
+alias ramdisk="diskutil partitionDisk $(hdiutil attach -nomount ram://1048576) 1 GPTFormat APFS 'RAM' '100%'"
 
 # ~~~~~~~~~~~~~~~~~~~~ Prompts ~~~~~~~~~~~~~~~~~~~~~
 
@@ -89,7 +90,6 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/adam/.docker/completions $fpath)
 autoload -Uz compinit
-compinit
 # End of Docker CLI completions
 
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
