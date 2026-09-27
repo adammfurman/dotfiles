@@ -64,7 +64,7 @@ alias mac-h="networksetup -listallhardwareports"
 # Create a temporary disk from RAM of 512 MB
 alias ramdisk="diskutil partitionDisk $(hdiutil attach -nomount ram://1048576) 1 GPTFormat APFS 'RAM' '100%'"
 # Superbacked2 cli
-alias superbacked="/Applications/Superbacked.app/Contents/MacOS/Superbacked"
+alias superbacked="/Applications/Superbacked 2.app/Contents/MacOS/Superbacked"
 
 # ~~~~~~~~~~~~~~~~~~~~ Prompts ~~~~~~~~~~~~~~~~~~~~~
 
