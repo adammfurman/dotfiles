@@ -52,3 +52,4 @@ yabai -m rule --add app="^Yubico Authenticator$" manage=off
 yabai -m rule --add app="^PureMac$" manage=off
 yabai -m rule --add app="Strongbox" manage=off
 yabai -m rule --add app="^KeePassXC$" manage=off
+yabai -m rule --add app="^Superbacked$" manage=off
